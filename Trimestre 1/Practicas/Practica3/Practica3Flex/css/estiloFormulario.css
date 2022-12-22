@@ -1,0 +1,184 @@
+body{
+    background-color: rgba(211, 211, 211, 0.238);
+    font-family:Arial, Helvetica, sans-serif ;
+    box-sizing: content-box;
+}
+h1,h2,h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    color: rgb(48, 48, 48);
+    
+}
+
+/* header ----------------*/
+header{
+    display: flex;
+    width: 95%;
+    margin: 10px;
+    align-items: center;
+    background-color: rgba(12, 29, 79, 0.915);    
+    border-radius: 4px;
+}
+/*Header diplay flex para manejar los tres divs que van en su interior, posicionandolos en tres columnas*/
+#divHeader{
+    display: flex;
+}
+/*Primer div con flex start para que se alinee arriba*/
+#logo{
+    align-items: center;
+    width: 10%;
+    height: 100%; 
+    margin-left: 3%;
+}
+/*Display flex para posicionar el buscador y la lupa en columnas. Tambien alineados arriba*/
+#form1{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    margin-left: 5%;
+    margin-right: 2%;
+}
+#log-carrito{
+    display: flex;
+    align-items: center;  
+}
+/*Estilo boton registrar y carrito*/
+.boton1{
+    border: 1px black solid;
+    background-color:rgb(37, 78, 202);
+    color: white;
+    height: 45%;
+    width: fit-content;
+    margin: 1%;
+    border-radius: 2px;
+}
+.boton1:hover{
+    background-color: rgb(35, 146, 186);
+}
+#idBuscador{
+    width: 400px;
+    height: 30px;
+    margin-right: 5px;
+    align-items: flex-start;
+}
+.imgLupa{
+    height: 15px;
+}
+
+
+/*Container -----*/
+.container{
+    display: flex;
+}
+
+/*barra nav lateral ---------*/
+.container{
+    display: flex;
+    width: 100%;
+}
+aside{
+    width: 20%;
+}
+main{
+    width: 80%;
+}
+aside nav div{
+    background-color: rgb(37, 78, 202);
+    height: 55px;
+    border: 1px solid black;
+    width: 90%;
+}
+aside nav div:hover{
+    background-color: rgb(35, 146, 186);
+}
+aside nav div p{
+    color: white;
+    margin-left: 5px;
+}
+/*Main ----------------*/
+.cont{
+    display: flex;
+}
+.labels{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.radio > div{
+    background-color: aqua;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+/*Footer ----------------*/
+footer{
+    display: flex;
+    margin: auto;
+    width: 95%;
+    background-color:rgba(12, 29, 79, 0.915);
+    align-items: flex-start;
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+/*los 3  divs del footer*/
+footer > div{
+    margin: auto;
+    margin-bottom: 10px;
+    flex: 30%;
+    margin: 5px;
+    text-align: center;
+}
+/*Contenido del div de subscripcion*/
+footer > div:nth-child(2) >div{
+    margin: 10px;
+}
+
+/*Contenido del div de redes*/
+footer > div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+}
+footer > div:nth-child(3) > a, a:link{
+    color: white;
+    margin: 5px;
+}
+
+
+
+
+@media screen and (max-width: 1000px){
+    .container{
+        flex-direction: column;
+    }
+    header{
+        margin: auto;
+    }
+    #idBuscador{
+        width: 100px;
+        height: 30px;
+        margin-right: 5px;
+        align-items: flex-start;
+    }
+    aside {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2%;
+    }
+    aside nav div{
+        margin: auto;
+        text-align: center;
+    }
+    main{
+        width: 90%;
+        margin: auto;
+    }
+
+
+}

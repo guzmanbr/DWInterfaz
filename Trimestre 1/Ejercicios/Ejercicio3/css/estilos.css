@@ -1,0 +1,33 @@
+
+p{
+    color: black;
+    text-align: ;
+    text-decoration: underline;
+    text-transform: capitalize;/*upper, lower, capitalice */
+    letter-spacing: 5px;/*separar palabras*/
+    word-spacing: 10px;/*separar palabras*/
+    line-height: 40px;/*espacio entre lineas*/
+    direction: ;/*direcion del texto*/
+    font-family: ;/*De mas restrictiva a menos; especial, menos especial, generica*/
+    font-size: 0.8em;/*em - % en el navegador */
+    font-weight: ;/**/
+
+}
+a{
+    /*estados: link, visited:click, hover:encima, active*/
+}
+a{
+    color: rgb(0, 153, 255);
+    text-decoration: none;
+}
+a:hover{
+    background-color: yellow;
+    text-decoration: underline;
+    color: aqua;
+}
+ol li{
+    list-style: upper-roman;
+}
+ul li{
+    list-style-image: url(../img/fondo.jpg);
+}

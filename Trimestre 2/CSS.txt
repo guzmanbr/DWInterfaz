@@ -1,0 +1,10 @@
+SE UILIZA POR:
+
+	- Reutilizaion
+	- Mantenimiento
+	- Modificacion
+	- Desacoplar
+
+Contenido(html)---- Estilos (CSS)
+		|
+	       WEB

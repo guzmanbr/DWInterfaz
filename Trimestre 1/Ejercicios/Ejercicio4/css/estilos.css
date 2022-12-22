@@ -1,0 +1,27 @@
+table{
+    border: solid black 1px;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th,td{
+    border: solid black 1px;
+    width: 100px;
+    height: 40px;
+}
+
+/*nth-child(odd)-imppar/(even)-par*/
+th:nth-child(odd){
+    background-color: blue;
+}
+th:nth-child(even){
+    background-color: rgba(0, 0, 255, 0.596);
+}
+td{
+    text-align: right;
+}
+
+tr:nth-child(even){
+    background-color: lightgray;
+}
+

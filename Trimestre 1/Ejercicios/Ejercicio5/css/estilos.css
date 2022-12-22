@@ -1,0 +1,46 @@
+li{
+    display: inline;
+    border: solid 1px black;
+    padding: 10px;
+}
+/*Boro el elemento li, y se quita el espacio que este ocupa*/
+.borrado{
+    display: none;
+}
+/*Oculto el elemento li  pero se mantiene el espacio*/
+.invisible{
+    visibility: hidden;
+}
+
+
+/* relative Se posiciona respecto al elemento anterior*/
+div.primero{
+   /* position: relative;
+   top: 20px;
+   left: 20px;   */
+   float: left;
+   border: solid 3px red;
+   width: 100px;
+}
+/* absolute Se posiciona respecto al padre*/
+div.segundo{
+    /* position: absolute; 
+    top: 20px;
+    left: 20px; */
+    border: solid 3px blue;
+    width: 100px;
+    float: left;
+}
+
+div.tercero{
+    float: left;
+    border: solid 3px green;
+    width: 100px;
+    height: 50px;
+    overflow: auto;
+}
+
+/*Limpia la flotabilidad anterior*/
+.nofloat{
+    clear: left;
+}

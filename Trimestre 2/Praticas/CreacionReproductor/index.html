@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>ReproductorVideos</title>
+        <link rel="shortcut icon" href="img/7575descarga.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="shortcut icon" href="#" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Reproductor video">
+        <meta name="author" content="Guzmán Benito Rodríguez">
+	</head>
+    <body> 
+        <div id="videoDiv">
+            <video id="idVideo" onclick="pausePlay()" width="800px" height="600px" >
+                <source id="videoCascada" src="media/video/cascada1280.mp4" type="video/mp4">
+            </video>
+            <div id="controles">
+                <button onclick="play()"><img src="media/img/play.png" alt="play"></button>
+                <button onclick="pause()"><img src="media/img/pause.png" alt="pause"></button>
+                <button onclick="reload()"><img src="media/img/restart.png" alt="restart"></button>
+                <button onclick="reloadAuto()"><img src="media/img/actualizar.png" alt="restart"></button>
+                <button onclick="menosVelocidad()"><img src="media/img/anterior.png" alt="menosVelocidad"></button>
+                <button onclick="masVelocidad()"><img src="media/img/next.png" alt="masVelocidad"></button>
+                <button  onclick="mute()"><img id="volumen" src="media/img/volumen.png" alt="mute"></button>
+                
+                <select name="calidad" id="calidad">
+                    <option id="420" value="420">420x240</option>
+                    <option id="640" value="640">640x360</option>
+                    <option id="1280" value="1280" selected>1280x720</option>
+                </select><br/><br/>
+            </div>
+        </div>
+        <script src="js/funciones.js"></script>
+    </body>
+</html>

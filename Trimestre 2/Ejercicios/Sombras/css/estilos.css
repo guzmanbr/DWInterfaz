@@ -1,0 +1,17 @@
+/*  |                     obligatorios               |                                                                 */
+/*   5px(posicion horizontal)  5px(posicion vertical)  5px(opacidad de sombra blur)  5px(radio de extension)   color (inset....)*/
+#somTexto{
+    text-shadow: 3px 5px 4px  gray ;
+}
+
+#somCaja{
+    box-shadow: 5px 10px 25px;
+}
+
+#somCajaInt{
+    box-shadow: 5px 8px 20px green inset;/*inset para sombra interior*/
+}
+
+#somTextoDoble{
+    text-shadow: 6px 5px  2px gray , 0px 0px 5px yellow  ;/*para poner sombra interior pongo a 0 las posisciones*/
+}

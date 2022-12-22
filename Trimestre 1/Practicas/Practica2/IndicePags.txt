@@ -1,0 +1,20 @@
+
++ Inicio : https://wireframe.cc/MV156j
++ Inicio Logueado : https://wireframe.cc/paxQUa
++ Instalaciones : https://wireframe.cc/GQoUhA
++ Reserva : https://wireframe.cc/1CzWlX
++ Bonos : https://wireframe.cc/gP838D
++ Informacion : https://wireframe.cc/IpSjRS
++ Novedades : https://wireframe.cc/4cGMj3
+
+Mejoras:
+++++ Noticias pags1-100 (mostrar 5 por pag ej).
+++++ Dividir deportes por tipo
+++++ Renovar bono
+++++ Mostrar fecha dia y luego disponibilidad
+++++ Cancelar reserva
+++++ Metodos pago
+++++ Administrar cuenta
+++++ Quitar contacto solo ubicacion
+
+

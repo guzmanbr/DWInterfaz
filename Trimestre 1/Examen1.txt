@@ -1,0 +1,17 @@
+Diseño Cnceptual - Wireflows ... 1 Ejercicio.
+CSS - 1 Ejercicio.
+
+Pregunta: Si convierto elemento de linea en bloque, puedo meter dentro un elemento en bloque? no
+
+
+Display: Permite cambiar, la tienen todos los elementos css.
+	+ inline: elemento en linea, uno detras de otros.
+	+ block: ocupa todo el ancho del padre.
+	+ inherit: hereda del padre (si el padre es bloque, pasa a ser bloque).
+	+ none
+
+Position:
+	+static: por defecto, si le aplico css no hace nada
+	+ relative: relativo respecto al elemento anterior 
+	+ absolute: relaivo respecto al padre (al contenedor)
+	+ fixed: se utiliza para el scroll

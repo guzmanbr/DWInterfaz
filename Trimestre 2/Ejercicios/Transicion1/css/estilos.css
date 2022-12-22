@@ -1,0 +1,28 @@
+/*
+Crear un contenedor de 200px donde escribas tu nombre en negro, con fondo gris claro
+realiza las siguientes transiciones:
+    -Modifica el tamaño de las letras al doble, fondo gris oscuro.
+    -Modifica el radio del borde para que quede redondeado y añadele sombra;
+*/
+
+
+.contenedor{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(120, 120, 120, 0.775);
+    font-size: 20px;
+    transition: 1s, font-size 2s;
+    text-align: center;
+    line-height: 200px;
+    margin-top: 10%;
+    margin-left: 50%;
+}
+
+.contenedor:hover{
+    font-size: 200%;
+    background-color: rgb(68, 67, 67);
+    border-radius: 8px;
+    box-shadow: 5px 10px 25px black;
+    text-shadow: 5px 10px 25px black;
+    /*line-height: 200px;*/
+}

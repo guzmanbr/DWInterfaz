@@ -1,0 +1,55 @@
+/*
+Descarga un vídeo a tu elección de https://pixabay.com/ de la máxima calidad posible.
+Una vez descargado reduce su tamaño para poder utilizarlo a una web, teniendo en cuenta que la calidad debe ser aceptable en formato mp4.
+Una vez descargado el vídeo, crea una página donde lo insertes con las siguientes opciones:
+Debe reproducirse en bucle.-
+Debe estar silenciado cuando se arranca.-
+Insertarás una fotografía de portada.-
+Tendrá un tamaño de 800x600.-
+Incluirás controles.-
+Debes indicarle al navegador que el formato es mp4.-
+Audio
+-Mostrar controles
+-El volumen inicial 40%
+-Mostrar la duracion total del audio al lado
+*/
+
+html{
+    background: rgb(7, 7, 7);
+    background: linear-gradient(0deg, rgb(18, 18, 18) 0%, rgb(37, 37, 37) 47%, rgb(18, 18, 18) 94%);
+}
+
+#videoDiv{
+    position: relative;
+    margin: auto;
+    display: flex;
+    height: 565px;
+    width: 800px;
+    box-shadow: 0px 0px 20px 2px rgb(18, 18, 18);
+    background: rgb(7, 7, 7);
+    background: linear-gradient(0deg, rgb(18, 18, 18) 0%, rgb(37, 37, 37) 47%, rgb(18, 18, 18) 94%);
+} 
+#controles{
+    position: absolute;
+    display: flex;
+    margin-top: 509px;
+    background-color: black;
+    width:800px;
+    justify-content: center;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+#controles button{
+    padding: 5px;
+    margin-right: 15px;
+    border: 1px black solid;
+    border-radius: 35%;
+}
+#controles button:hover{
+    background-color: rgba(255, 255, 255, 0.682);
+    scale: 1.07;
+}
+img{
+    width: 24px;
+    height: 20px;
+}

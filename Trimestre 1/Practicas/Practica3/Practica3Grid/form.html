@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/7575descarga.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/estiloFormulario.css">
+        <title>PcComponentsForm</title>
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="img/PcComponentes.png" alt="LOGO">
+            <div id="divHeader">
+                <form action="post" id="form1">
+                    <input type="search" name="buscador" id="idBuscador" placeholder="Buscar">
+                    <button><img class="imgLupa" src="img/lupa.png" alt="lupa"></button>
+                </form>
+                <div id="log-carrito">
+                    <input type="button" value="Registrarse" class="boton1">
+                    <input type="button" value="Carrito" class="boton1">
+                </div>
+            </div>
+        </header>
+        <hr/>
+        <div class="container">
+            <aside>
+                <nav>
+                    <div><p>Inicio</p> </div>
+                    <div><p>Formulario</p> </div>
+                    <div><p>Hardware</p></div>
+                    <div><p>Software</p></div>
+                    <div><p>Otros</p></div>
+                </nav>
+            </aside>
+            <main>
+                <form action="enviar.php" method="post">
+        
+                    <fieldset>
+                        <legend>Información del articulos</legend>
+                        <label for="articulo">Articulo</label>
+                        <input type="text" name="articulo" id="descripcion" required="required" minlength="5" maxlength="50" size="50%"/><br/><br/>
+                        <label for="descripcion">Descripcion</label>
+                        <textarea name="descripcion" id="desc" cols="50%" rows="2" required></textarea><br/><br/>
+                    </fieldset><br/>
+        
+                    <fieldset>
+                        <legend>Clasificación de articulo</legend>
+                        <label for="destacado">Marcar como destacado</label>
+                        <input type="checkbox" name="dest" value="Si" id="destacado"/><br/><br/>
+        
+                        <label for="hardware">Hardware</label>
+                        <input type="radio" name="tipo" value="hardware" id="hardware" /><br/>
+                        <label for="software">Software</label>
+                        <input type="radio" name="tipo" value="software" id="software"/><br/>
+                        <label for="servicios">Servicios</label>
+                        <input type="radio" name="tipo" value="servicios" id="servicios"/><br/><br/>
+        
+                        <label for="hardware">Subcategorías</label>
+                        <select name="hardware">
+                            <option value="perifericos">Perifericos</option>
+                            <option value="cableado">Cableado</option>
+                            <option value="equipos">Equipos</option>
+                        </select><br/><br/>
+                    
+                    </fieldset>
+                   
+                    <input class="boton1" type="submit" value="Enviar"/>
+                    <input class="boton1" type="reset" value="Limpiar">
+                </form>
+            </main>
+        </div>
+        <hr/>
+        <footer>
+            <div>
+                <h3>Información</h3>
+                <h5>Direccion - C/ San Blas Nº 25</h5>
+                <h5>Telefono - 66654526</h5>
+                <h5>01010 Software</h5>
+            </div>
+            <div>
+                <h3>Subscripción</h3>
+                <div>
+                    <label for="idNombre">Nombre </label>
+                    <input type="nombre" name="idNombre" id="idNombre">
+                </div>
+                <div>
+                    <label for="idemail">Correo </label>
+                    <input type="email" name="idemail" id="idemail">
+                </div>
+            </div>
+            <div>
+                <h3>Redes Sociales</h3>
+                <a href="https://twitter.com/?lang=es" target="_blank">Twitter</a>
+                <a href="https://es-es.facebook.com/" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </div>
+        </footer>
+    </body>
+</html>

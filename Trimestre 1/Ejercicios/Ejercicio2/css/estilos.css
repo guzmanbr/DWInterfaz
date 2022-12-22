@@ -1,0 +1,26 @@
+
+body{
+    /* background-color: #FFF000; formato hexadecimal */
+    background-color: rgba(255, 0, 0, 0.6);/*formato rgba ultimo es la trasnsparencia*/ 
+    /*background-image: url(../img/fondo2.jpg);/*tengo que poner una url*/
+    background-repeat: repeat-x;/*repeat-x en horizontal, -y en vertical, no repeat, todo esto en caso de que la imagen sea mas pequeña que el fondo*/
+   /* background-attachment: fixed;fijar imagen */
+   /* background-position: top;/*bottom, up, rigth, left, top: para colocarla debe estar en no-repeat*/
+   /* background: red,url(../img/fondo2.jpg), repeat-x; se puede poner todo en una linea */
+   /* background-size: contain;/*cover-toda pantalla, contain- la imagen se adapta al fondo*/
+   background-origin:content-box ;/*desde donde inicia el fondo*/
+   border: 2px solid blue; 
+}
+
+h1{
+    color: aliceblue;
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+p{
+    border-style: solid;
+    border-width: 10px 5px 8px 15px;/* 2px 5px para solo dar arriba-abajo y izq-der */
+    border-radius: 5px;
+    margin-top: 50px; /* margin auto - para separar pordefectpo */
+    padding-left: 10px;
+}

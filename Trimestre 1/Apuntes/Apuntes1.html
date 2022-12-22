@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplo1</title>
+        <link rel="stylesheet" href="estilos.css"/>
+        <meta name="keywords" content="html5, css, xhtml"/>
+        <meta name="author" content="Guzman Benito"/>
+        
+    </head>
+    
+    <body>
+        <header>
+            <p>Hola daw</p>    
+            <h1>Titulo</h1><br/>
+            <h2>Titulo 2</h2>
+        </header>
+        <main>
+            <!--Textos------------------------>
+            <p>
+                <strong>texto es negrita semantico</strong><br/>
+                <em>texto cursiva semantico</em><br/>
+                <small>texto pequeño</small><br/>
+                <mark>texto marcado</mark><br/>
+                <del>Texto tachado</del><br/>
+                <sub>Subindice</sub>pp<br/>
+                <sup>Superindice</sup>pp<br/>
+                
+            </p>
+            <p>
+                <q>citas de algo</q><br/>
+                <blockquote cite="https://es.wikipedia.org/wiki/Zamora"> bloque de citas Zamora</blockquote>
+                <abbr title="Organizacion no gubernamental">ONG</abbr>
+                <address>C/ san torcuato</address>
+                <pre>
+                    Respeta los
+                    saltos
+                    de
+                    el 
+                    texto
+    
+                    <code>para identificar codigo</code><!--para codigo-->
+                </pre>
+            </p>
+            <!--Formulario--------------------------------------------->
+            <form action="procesar.php" method="get" name="miFormulario" id="miForm" autocomplete="on"><!--get menos seguro que post, nombre y id,  autocompletar on\off-->
+                <input type="text" name="nombre" required="required"/><br/><br/>
+                <input type="password" name="pass" id="idpass"/><br/><br/>
+                <input type="number" name="numero" id="num" min="0" max="10"/><br/><br/>
+                <input type="color"/><br/><br/>
+                <input type="range" min="0" max="5"/><br/><br/>
+                <input type="search"/><br/><br/>
+                <textarea name="" id="" cols="30" rows="10"></textarea><br/><br/>
+                <fieldset>
+                    <legend>datos</legend>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="genero" value="masculino" id="masculino"><br/><br/>
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" name="genero" value="femenino" id="femenino"><br/><br/>
+                    <label for="mayoredad">Mayor Edad</label>
+                    <input type="checkbox" name="mayoredad" id="mayor" value="mayoredad" checked="checked"/><br/><br/>
+                </fieldset>
+               
+
+                <select name="menu" id="idmenu">
+                    <option value="tomate">Tomate</option>
+                    <option value="cebolla">Cebolla</option>
+                    <option value="pepino">Pepinop</option>
+                </select><br/><br/>
+
+                <input list="postres" name="dulces" placeholder="Elige una opcion"/> 
+                <datalist id="postres">
+                    <option value="crema">Crema</option>
+                    <option value="natillas">Natillas</option>
+                    <option value="flan">Flan</option>
+                </datalist><br/><br/>
+
+
+
+                <input type="submit" value="enviar"><br/><br/>
+                <input type="reset" value="reset"><br/><br/>
+
+                <input type="button" value="informacion" onclick="alert('Infor')">
+                <button type="button" value="informacion">informacion</button>
+                <!--
+                    disable -
+                    readonly  -
+                    pattern -
+                    size -tamaño caja
+                    maxlength - num maximo de caracteres
+                    value="10" -
+                    step="10" - salto de numero
+
+                -->
+
+            </form><br/><br/>
+
+
+
+            <!--Enlaces-->
+
+            <a href="https://www.w3schools.com" target="_self"><img src="img/31830380.jpg" width="50" height="50" alt="hasbulla"></a> <!--o blank otra pestaña o self misma-->
+            
+            
+
+
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+
+</html>

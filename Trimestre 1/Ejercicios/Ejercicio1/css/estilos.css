@@ -1,0 +1,47 @@
+h1{
+    color: green;
+}
+
+p{
+    color: red;
+    text-align: center;
+}
+
+#especial{
+    color: white;
+    background-color: black;
+}
+
+.letraVerde{
+    color: green;
+}
+
+.fondoAmarillo{
+    background-color: yellow;
+}
+
+h1,h2,h3{
+    background-color: grey;
+}
+
+/* solo aplica este estilo a elementos con cursiva y clase primeo en el padre */
+.primero .cursiva{
+    font-style: italic;
+}
+
+/* Se aplica a todo elemento ul con clase primero y que tenga un hijo con clase cursiva */
+ul.primero li.cursiva{
+    background-color: aqua;
+} 
+/* de esta forma solo se aplicaria si es descendente directo por lo que el tercer hijo no lo heredaria */
+ul.primero1 > li.cursiva{
+    background-color: aqua;
+}
+
+/*De esta forma le aplico el estilo al hermano directo de li con clase cursiva*/
+ul li.cursiva + li{
+    color: green;
+}
+
+
+
