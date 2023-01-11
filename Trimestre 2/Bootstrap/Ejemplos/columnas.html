@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Ejemplo de columnas</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .row>div {
+      background: #f2f2f2;
+      padding: 30px;
+      border: 1px solid grey;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h3>Se pueden definir las columnas sin indicar cuantas, así podré tener más de 12</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          Primera de tres columnas
+        </div>
+        <div class="col">
+          Segunda de tres columnas
+        </div>
+        <div class="col-5">
+          Tercera de tres columnas
+        </div>
+      </div>
+    </div>
+
+    <h3>Lo habitual es indicar cuántas columnas ocupa</h3>
+    <div class="row">
+      <div class="col-4">
+        Primera de tres columnas
+      </div>
+      <div class="col-4">
+        Segunda de tres columnas
+      </div>
+      <div class="col-4">
+        Tercera de tres columnas
+      </div>
+    </div>
+
+    <h3>No tienen por qué ser el mismo número</h3>
+    <div class="row">
+      <div class="col-5">
+        Primera de tres columnas
+      </div>
+      <div class="col-5">
+        Segunda de tres columnas
+      </div>
+      <div class="col-2">
+        Tercera de tres columnas
+      </div>
+    </div>
+
+    <h3>Si me paso de las 12 lo pone en la siguiente fila</h3>
+    <div class="row">
+      <div class="col-5">
+        Primera de tres columnas
+      </div>
+      <div class="col-5">
+        Segunda de tres columnas
+      </div>
+      <div class="col-5">
+        Tercera de tres columnas
+      </div>
+    </div>
+
+    <h3>Si menos de 12</h3>
+    <div class="row">
+      <div class="col-2">
+        Primera de tres columnas
+      </div>
+      <div class="col-2">
+        Segunda de tres columnas
+      </div>
+      <div class="col-2">
+        Tercera de tres columnas
+      </div>
+    </div>
+
+    <h3>Se ve cómo evolucionan según el tamaño de la pantalla</h3>
+
+    <div class="row mb-3">
+      <div class="col">.col</div>
+      <div class="col">.col</div>
+      <div class="col">.col</div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">.col-4</div>
+      <div class="col-4">.col-4</div>
+      <div class="col-4">.col-4</div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-sm-4">.col-sm-4</div>
+      <div class="col-sm-4">.col-sm-4</div>
+      <div class="col-sm-4">.col-sm-4</div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4">.col-md-4</div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-lg-4">.col-lg-4</div>
+      <div class="col-lg-4">.col-lg-4</div>
+      <div class="col-lg-4">.col-lg-4</div>
+    </div>
+    
+    <div class="row mb-3">
+      <div class="col-xl-4">.col-xl-4</div>
+      <div class="col-xl-4">.col-xl-4</div>
+      <div class="col-xl-4">.col-xl-4</div>
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+</body>
+
+</html>
