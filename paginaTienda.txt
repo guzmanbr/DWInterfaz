@@ -1,0 +1,8 @@
+pagina home
+login logout
+	admin,moderador,usuaio normal
+registro con formulario
+pag de productos : sesc, precio stock
+zona usuario
+
+
