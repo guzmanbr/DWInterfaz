@@ -1,0 +1,25 @@
+body{
+    box-sizing: content-box;
+}
+/*---Header---*/
+header{
+
+}
+/*--Logo*/
+#divLogo{
+    width: 10%;
+}
+#imgLogo{
+    width: 155px;
+    height: 30px;
+}
+
+/*Estilo todos los iconos Pequeños*/
+.iconos{
+    height:30px;
+}
+
+#logins{
+    background-color: aqua;
+    margin-left: 10px;
+}
