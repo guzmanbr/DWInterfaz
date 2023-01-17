@@ -49,15 +49,30 @@ main{
 }
 #novedades{
     display: flex;
+    flex-direction: column;
     margin: auto;
-    justify-content: space-evenly;
     align-items: center;
-    background-color: aqua;
     width: 80%;
     height: 30%;
+    margin-top: 20px;
+
+}
+#novedades > p{
+    position: absolute;
+    margin-top: 15%;
+    font-size: 80px;
+    opacity: 100%;
+    
+}
+#novedades > a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    opacity: 60%;
 
 }
 #novedades > a >img{
+    margin: auto;
     width: 80%;
     height: 100%;
 }
@@ -74,7 +89,6 @@ main{
     flex-direction: column-reverse;
     height: fit-content;
     margin-bottom: 5%;
-    background-color: aqua;
 }
 #categorias > article:hover{
     color: rgba(0, 0, 0, 0.658);
@@ -90,6 +104,7 @@ main{
 
 #categorias > article > img{
     margin: auto;
+    opacity: 85%;
     width: 420px;
 }
 /*----Footer----*/
@@ -112,7 +127,7 @@ h4{
 }
 .divIconos{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
 }
 .divIconos > img{
