@@ -1,0 +1,22 @@
+body{
+    display: flex;
+}
+
+section{
+    margin: 20px;
+    height: 300px;
+    width: 50%;
+    border: 1px black solid;
+    text-align: center;
+}
+
+button{
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 47%;
+}
+
+img{
+    width: 60%;
+    height: 80%;
+}
