@@ -13,162 +13,10 @@
 </head>
 
 <body>
-    <header class="p-3 mb-3 border-bottom row">
-        <div class="container col-6 col-sm-6 col-md-6 col-lg-6 d-flex align-items-center">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <img src="img/logo.png" width="100px" height="32px">
-            </div>
-        </div>
-        <div class="container col-6 col-sm-6 col-md-6 col-lg-6">
-            <div class="d-flex flex-wrap align-items-center justify-content-between justify-content-lg-end">
-                <form class="col-12 col-sm-6 col-md-6 col-lg-auto mb-sm-0 mb-3 mb-lg-0 me-lg-3" role="search">
-                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-                </form>
-                <a href="#" class="d-block link-dark text-decoration-none m-3" aria-expanded="false">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-cart"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                    </svg>
 
-                </a>
-                <a href="#" class="d-block link-dark text-decoration-none" data-bs-toggle="modal"
-                    data-bs-target="#modalSignin">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black"
-                        class="bi bi-person-circle" viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                        <path fill-rule="evenodd"
-                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </header>
-    <div class="row mb-2 text-center">
-        <ul class="nav col-12">
-            <li class="nav-item col-12 col-md-3 col-lg-2">
-                <a class="nav-link text-dark" href="#" aria-current="page">Active link</a>
-            </li>
-            <li class="nav-item col-12 col-md-3 col-lg-1">
-                <a class="nav-link text-dark" href="#">Link</a>
-            </li>
-            <li class="nav-item col-12 col-md-3 col-lg-2">
-                <a class="nav-link text-dark" href="#">Disabled link</a>
-            </li>
-            <li class="nav-item col-12 col-md-3 col-lg-1">
-                <a class="nav-link text-dark" href="#" aria-current="page">Active link</a>
-            </li>
-            <li class="nav-item col-12 col-md-3 col-lg-2">
-                <a class="nav-link text-dark" href="#">Link</a>
-            </li>
-            <li class="nav-item col-12 col-md-3 col-lg-1">
-                <a class="nav-link text-dark" href="#">Disabled link</a>
-            </li>
-            <li class="nav-item col-12 col-md-3 col-lg-2">
-                <a class="nav-link text-dark" href="#" aria-current="page">Active link</a>
-            </li>
-            <li class="nav-item col-12 col-md-3 col-lg-1">
-                <a class="nav-link text-dark" href="#">Link</a>
-            </li>
-        </ul>
-    </div>
+
     <main>
-        <div class="modal fade" tabindex="-1" id="modalSignin" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content rounded-4 shadow">
-                    <div class="modal-header p-5 pb-4 border-bottom-0">
-                        <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
-                        <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
 
-                    <div class="modal-body p-5 pt-0">
-                        <form class="">
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control rounded-3" id="floatingInput"
-                                    placeholder="name@example.com">
-                                <label for="floatingInput">Email address</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="password" class="form-control rounded-3" id="floatingPassword"
-                                    placeholder="Password">
-                                <label for="floatingPassword">Password</label>
-                            </div>
-                            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
-                            <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
-                            <hr class="my-4">
-                            <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
-                            <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
-                                <svg class="bi me-1" width="16" height="16">
-                                    <use xlink:href="#twitter" />
-                                </svg>
-                                Sign up with Twitter
-                            </button>
-                            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-                                <svg class="bi me-1" width="16" height="16">
-                                    <use xlink:href="#facebook" />
-                                </svg>
-                                Sign up with Facebook
-                            </button>
-                            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
-                                <svg class="bi me-1" width="16" height="16">
-                                    <use xlink:href="#github" />
-                                </svg>
-                                Sign up with GitHub
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/foto1.png" width="100%" height="500">
-                    <div class="container">
-                        <div class="carousel-caption text-start">
-                            <h1>50% Descuento</h1>
-                            <p>Aprovecha las ultimas ofertas de las rebajas de invierno.</p>
-                            <p><a class="btn btn-lg btn-dark text-white" href="#">Saber mas</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/foto22.jpg" width="100%" height="500">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Nike x Lil Nas X</h1>
-                            <p>Descubre las "zapatillas de Satan" en esta ultima colaboracion.</p>
-                            <p><a class="btn btn-lg btn-dark text-white" href="#">Saber mas</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/foto33.webp" width="100%" height="500">
-                    <div class="container">
-                        <div class="carousel-caption text-end">
-                            <h1>Nike Air Max 95 olive.</h1>
-                            <p>Las nuevas zapatillas perfectas para el otoño.</p>
-                            <p><a class="btn btn-lg btn-dark text-white" href="#">Saber mas</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
         <section class="pt-5 pb-5">
             <div class="container">
                 <div class="row">
@@ -186,18 +34,15 @@
                         <a class="mb-3 m-1" href="#carouselExampleIndicators2" role="button" data-bs-slide="next">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="dark"
                                 class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
                             </svg>
                         </a>
                     </div>
                     <div class="col-12">
                         <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="row">
-
                                         <div class="col-md-4 mb-3">
                                             <div class="card">
                                                 <img class="img-fluid" alt="100%x280" src="img/deportes/futbol.webp"
@@ -237,7 +82,6 @@
                                                 <div class="card-body">
                                                     <h4 class="card-title">Running</h4>
                                                 </div>
-
                                             </div>
                                         </div>
                                         <div class="col-md-4 mb-3">
@@ -258,7 +102,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                                 <div class="carousel-item">
