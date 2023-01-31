@@ -1,485 +1,648 @@
 <!doctype html>
 <html lang="es">
 
-<head>
-    <title>Nike</title>
-    <link rel="shortcut icon" href="img/7575descarga.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tienda Ropa">
-    <meta name="author" content="Guzmán Benito Rodríguez">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <head>
+        <title>Nike</title>
+        <link rel="shortcut icon" href="img/7575descarga.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Tienda Ropa">
+        <meta name="author" content="Guzmán Benito Rodríguez">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
 
-</head>
+    <body>
 
-<body>
-    <div class="container-fluid">
-        <header class="row p-4 bg-light">
-            <div class="row d-flex align-items-center">
-                <div class="col-6 d-flex flex-wrap  align-items-center justify-content-lg-start">
-                    <img src="./img/nike.png" class="img-fluid rounded-top" alt="" width="120px">
-                </div>
-                <div class="col-6">
-                    <div class="row">
-                        <div class="col-6 d-flex  align-items-center justify-content-center justify-content-lg-end">
-                            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                                <input type="search" class="form-control" placeholder="Buscar" aria-label="Search">
-                            </form>
-                        </div>
-                        <div class="col-2">
-                            <button class="btn" type="submit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                    class="bi bi-search" viewbox="0 0 16 16">
-                                    <path
-                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="col-2">
-                            <button class="btn" type="submit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                    class="bi bi-basket" viewbox="0 0 16 16">
-                                    <path
-                                        d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="col-2">
-                            <button class="btn" type="submit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                    class="bi bi-person-circle" viewbox="0 0 16 16">
-                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                                    <path fill-rule="evenodd"
-                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                                </svg>
-                            </button>
+        <!------------- Header --------------->
+        <div class="container-fluid">
+            <header class="row p-4 bg-light">
+                <div class="row d-flex align-items-center">
+                    <div class="col-4 d-flex flex-wrap  align-items-center justify-content-lg-start">
+                        <img src="./img/nike.png" class="img-fluid rounded-top" alt="" width="120px">
+                    </div>
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="row">
+                                <div class="col-10 d-flex  align-items-center justify-content-center justify-content-lg-end">
+                                        <form class="col-12  mb-3 mb-lg-0 me-lg-3 rounde" role="search">
+                                            <input type="search" class="form-control" placeholder="Buscar" aria-label="Search">
+                                        </form>
+                                    </div>
+                                    <div class="col-2">
+                                        <button class="btn" type="submit">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                                class="bi bi-search" viewbox="0 0 16 16">
+                                                <path
+                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 d-flex justify-content-end ">
+                                <div class="row">
+                                    <div class="col">
+                                        <button class="btn" type="submit">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                                class="bi bi-basket" viewbox="0 0 16 16">
+                                                <path
+                                                    d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="col">
+                                        <div class="text-center">
+                                            <a href="" class="btn" data-toggle="modal" data-target="#modalRegisterForm">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewbox="0 0 16 16">
+                                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
-    </div>
-    <nav class="navbar navbar-expand-md navbar-light bg-light d-flex">
-        <div class="navbar row container-fluid bg-light d-flex text-center">
-            <ul class="row row-cols  navbar-nav">
-                <div class="col-md-3 col-lg">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                </div>
-                <div class="col-md-3 col-lg">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Hombre</a>
-                    </li>
-                </div>
-                <div class="col-md-3 col-lg">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Mujer</a>
-                    </li>
-                </div>
-                <div class="col-md-3 col-lg">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Niño</a>
-                    </li>
-                </div>
-
-                <div class="col-md-3 col-lg">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Deportes</a>
-                    </li>
-                </div>
-                <div class="col-md-3 col-lg">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Informacion</a>
-                    </li>
-                </div>
-                <div class="col-md-3 col-lg">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Informacion</a>
-                    </li>
-                </div>
-                <div class="col col-lg">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Informacion</a>
-                    </li>
-                </div>
-            </ul>
+            </header>
         </div>
-    </nav>
-    <hr>
 
-    <main>
-        <section class="container-fluid">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active bg-dark"></li>
-                    <li data-target="#myCarousel" data-slide-to="1" class=" bg-dark"></li>
-                    <li data-target="#myCarousel" data-slide-to="2" class=" bg-dark"></li>
-                </ol>
-
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="img/carrusel/img4.jpg" alt="" width="100%">
+        <!------------- Barra de navegacion --------------->
+        <nav class="navbar navbar-expand-md navbar-light bg-light d-flex">
+            <div class="navbar row container-fluid bg-light d-flex text-center">
+                <ul class="row row-cols  navbar-nav">
+                    <div class="col-md-3 col-lg">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                    </div>
+                    <div class="col-md-3 col-lg">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hombre</a>
+                        </li>
+                    </div>
+                    <div class="col-md-3 col-lg">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mujer</a>
+                        </li>
+                    </div>
+                    <div class="col-md-3 col-lg">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Niño</a>
+                        </li>
                     </div>
 
-                    <div class="item">
-                        <img src="img/carrusel/img5.jpg" alt="" width="100%">
+                    <div class="col-md-3 col-lg">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Deportes</a>
+                        </li>
                     </div>
-
-                    <div class="item">
-                        <img src="img/carrusel/img2.jpg" alt="" width="100%" height="100%">
+                    <div class="col-md-3 col-lg">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Informacion</a>
+                        </li>
                     </div>
-                </div>
-
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                    <div class="col-md-3 col-lg">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre Nosotros</a>
+                        </li>
+                    </div>
+                    <div class="col col-lg">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nike Club</a>
+                        </li>
+                    </div>
+                </ul>
             </div>
-        </section>
+        </nav>
 
+        <hr>
 
-        <section class="py-5">
-            <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center">
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!--image-->
-                            <img class="card-img-top" src="img/airforce1.webp" alt="zapatilla" />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Popular Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small mb-2">
-                                        <div class="bi-star-fill">Air Force 1</div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    $40.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center">
-                                    <a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
-                                </div>
-                            </div>
+        <main>
+            <!----------- Modal del Log In ------------>
+            <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                        <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body mx-3">
+                        <div class="md-form mb-5">
+                            <i class="fas fa-user prefix grey-text"></i>
+                            <input type="text" id="orangeForm-name" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="orangeForm-name">Nombre</label>
+                        </div>
+                        <div class="md-form mb-5">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <input type="email" id="orangeForm-email" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="orangeForm-email">Email</label>
+                        </div>
+                
+                        <div class="md-form mb-4">
+                            <i class="fas fa-lock prefix grey-text"></i>
+                            <input type="password" id="orangeForm-pass" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="orangeForm-pass">Contraseña</label>
+                        </div>
+                
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                        <button class="btn btn-dark">LogIn</button>
                         </div>
                     </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!--image-->
-                            <img class="card-img-top" src="img/airforce1.webp" alt="zapatilla" />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Popular Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small mb-2">
-                                        <div class="bi-star-fill">Air Force 1</div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    $40.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center">
-                                    <a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!--image-->
-                            <img class="card-img-top" src="img/airforce1.webp" alt="zapatilla" />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Popular Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small mb-2">
-                                        <div class="bi-star-fill">Air Force 1</div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    $40.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center">
-                                    <a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!--image-->
-                            <img class="card-img-top" src="img/airforce1.webp" alt="zapatilla" />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Popular Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small mb-2">
-                                        <div class="bi-star-fill">Air Force 1</div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    $40.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center">
-                                    <a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!--image-->
-                            <img class="card-img-top" src="img/airforce1.webp" alt="zapatilla" />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Popular Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small mb-2">
-                                        <div class="bi-star-fill">Air Force 1</div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    $40.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center">
-                                    <a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!--image-->
-                            <img class="card-img-top" src="img/airforce1.webp" alt="zapatilla" />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Popular Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small mb-2">
-                                        <div class="bi-star-fill">Air Force 1</div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    $40.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center">
-                                    <a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </section>
 
-    </main>
+            <!------------- Carrusel de imagenes --------------->
+            <section class="container-fluid">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active bg-dark"></li>
+                        <li data-target="#myCarousel" data-slide-to="1" class=" bg-dark"></li>
+                        <li data-target="#myCarousel" data-slide-to="2" class=" bg-dark"></li>
+                    </ol>
 
-    <footer class=" text-lg-start bg-white text-muted">
-
-        <section class="d-flex">
-
-            <div class="row container-fluid text-center bg-dark text-white">
-                <div class="col" id="accordion">
-                    <div class="">
-                      <div class="header" id="heading1">
-                        <h5 class="mb-0">
-                          <button class="btn text-white" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                            AYUDA
-                          </button>
-                        </h5>
-                      </div>
-                  
-                      <div id="collapse1" class="collapse bg-dark " aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body">
-                            <p>
-                                <a href="#!" class="text-reset">Estado pedido</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Envios y entregas</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Devoluciones</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Opciones de pago</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Contacto</a>
-                            </p>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="img/carrusel/banner_189_Desktop_1.jpg" alt="" width="100%">
                         </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="col" id="accordion2">
-                    <div class="">
-                      <div class="header" id="heading2">
-                        <h5 class="mb-0">
-                          <button class="btn text-white" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                            AYUDA
-                          </button>
-                        </h5>
-                      </div>
-                  
-                      <div id="collapse2" class="collapse bg-dark " aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body">
-                            <p>
-                                <a href="#!" class="text-reset">Estado pedido</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Envios y entregas</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Devoluciones</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Opciones de pago</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Contacto</a>
-                            </p>
+                        <div class="item">
+                            <img src="img/carrusel/banner_155_230127_Onlineshop_Desktop_MEN_1.jpg" alt="" width="100%">
                         </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="col" id="accordion3">
-                    <div class="">
-                      <div class="header" id="heading3">
-                        <h5 class="mb-0">
-                          <button class="btn text-white" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
-                            AYUDA
-                          </button>
-                        </h5>
-                      </div>
-                  
-                      <div id="collapse3" class="collapse bg-dark " aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body">
-                            <p>
-                                <a href="#!" class="text-reset">Estado pedido</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Envios y entregas</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Devoluciones</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Opciones de pago</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Contacto</a>
-                            </p>
+                        <div class="item">
+                            <img src="img/carrusel/img1.jpg" alt="" width="100%" height="100%">
                         </div>
-                      </div>
                     </div>
+        
+                    <!--Controles Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
                 </div>
+            </section>
+            <br><br>
 
-                <div class="col-md-6 col-lg-3  mb-4">
-
-                    <h5 class="text-uppercase fw-bold mb-4">Redes</h5>
+            <!------------- Carrusel deportes --------------->
+            <section class="pt-5 pb-5">
+                <div class="container-fluid">
                     <div class="row">
+                        <div class="col-4 d-flex justify-content-start">
+                            <a class="mb-3 m-1" href="#carouselExampleIndicators2" role="button" data-bs-slide="prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="dark"
+                                    class="bi bi-arrow-left-circle-fill" viewbox="0 0 16 16">
+                                    <path
+                                        d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="mb-3" style="text-align: center;">Deportes</h3>
+                        </div>
+                        <div class="col-4 d-flex justify-content-end">
+                            <a class="mb-3 m-1" href="#carouselExampleIndicators2" role="button" data-bs-slide="next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="dark"
+                                    class="bi bi-arrow-right-circle-fill" viewbox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-md-3 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280" src="img/deportes/futbol.webp"
+                                                        width="100%" height="280">
+                                                    <div class="card-body bg-light">
+                                                        <h4 class="card-title">Futbol</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280" src="img/deportes/baloncesto.webp"
+                                                        width="100%" height="280">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Baloncesto</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280" src="img/deportes/fitnes.webp"
+                                                        width="100%" height="280">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Training</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280" src="img/deportes/runingwebp.webp"
+                                                        width="100%" height="280">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Running</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-3 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280" src="img/deportes/tenis.webp"
+                                                        width="100%" height="280">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Tenis</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280" src="img/deportes/yoga.webp"
+                                                        width="100%" height="280">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Atletismo</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280" src="img/deportes/skate.webp"
+                                                        width="100%" height="280">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Skate</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280" src="img/deportes/danz.webp"
+                                                        width="100%" height="280">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Otros</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p>
-                        <a href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-instagram" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                            </svg>
-                        </a>
-                    </p>
-                    <p>
-                        <a href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-facebook" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                            </svg>
-                        </a>
-                    </p>
-                    <p>
-                        <a href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-twitter" viewBox="0 0 16 16">
-                                <path
-                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                            </svg>
-                        </a>
-                    </p>
                 </div>
+            </section>
+            <!------------- Cards de productos --------------->
+            <section class="py-5">
+                <div class="container px-4 px-lg-5 mt-5">
+                    <div class="row gx-4 gx-lg-5 row-cols-2  row-cols-md-3 justify-content-center">
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!--image-->
+                                <img class="card-img-top" src="img/airforce1.webp" alt="zapatilla" />
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Popular Item</h5>
+                                        <!-- Product reviews-->
+                                        <div class="d-flex justify-content-center small mb-2">
+                                            <div class="bi-star-fill">Air Force 1</div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                        </div>
+                                        <!-- Product price-->
+                                        $120.00
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!--image-->
+                                <img class="card-img-top" src="img/airforce1.webp" alt="zapatilla" />
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Popular Item</h5>
+                                        <!-- Product reviews-->
+                                        <div class="d-flex justify-content-center small mb-2">
+                                            <div class="bi-star-fill">Air Force 1</div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                        </div>
+                                        <!-- Product price-->
+                                        $120.00
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!--image-->
+                                <img class="card-img-top" src="img/airforce1.webp" alt="zapatilla" />
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Popular Item</h5>
+                                        <!-- Product reviews-->
+                                        <div class="d-flex justify-content-center small mb-2">
+                                            <div class="bi-star-fill">Air Force 1</div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                        </div>
+                                        <!-- Product price-->
+                                        $120.00
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!--image-->
+                                <img class="card-img-top" src="img/airforce1.webp" alt="zapatilla" />
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Popular Item</h5>
+                                        <!-- Product reviews-->
+                                        <div class="d-flex justify-content-center small mb-2">
+                                            <div class="bi-star-fill">Air Force 1</div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                        </div>
+                                        <!-- Product price-->
+                                        $120.00
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!--image-->
+                                <img class="card-img-top" src="img/airforce1.webp" alt="zapatilla" />
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Popular Item</h5>
+                                        <!-- Product reviews-->
+                                        <div class="d-flex justify-content-center small mb-2">
+                                            <div class="bi-star-fill">Air Force 1</div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                        </div>
+                                        <!-- Product price-->
+                                        $120.00
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!--image-->
+                                <img class="card-img-top" src="img/airforce1.webp" alt="zapatilla" />
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Popular Item</h5>
+                                        <!-- Product reviews-->
+                                        <div class="d-flex justify-content-center small mb-2">
+                                            <div class="bi-star-fill">Air Force 1</div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                        </div>
+                                        <!-- Product price-->
+                                        $120.00
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
+            </section>
+        </main>
+
+        <!-------------------- Footer ------------------------>
+        <footer class=" text-lg-start bg-white text-muted">
+
+            <section class="d-flex justify-content-center">
+
+                <div class="row container-fluid text-center bg-dark text-white">
+
+                    <!------------- Opciones el footer --------------->
+                    <div class="col-md-3" id="accordion">
+                        <div class="">
+                            <div class="header p-4" id="heading1">
+                                <h5 class="mb-0">
+                                    <button class="btn text-white" data-toggle="collapse" data-target="#collapse1"
+                                        aria-expanded="true" aria-controls="collapse1">
+                                        AYUDA
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapse1" class="collapse bg-dark p-3" aria-labelledby="headingOne"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        <a href="#!" class="text-reset">Estado pedido</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">Envios y entregas</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">Devoluciones</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">Opciones de pago</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">Contacto</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3" id="accordion2">
+                        <div class="header p-4" id="heading2">
+                            <h5 class="mb-0">
+                                <button class="btn text-white" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"> 
+                                        ÚNETE A NOSOTROS
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapse2" class="collapse bg-dark p-3" aria-labelledby="headingOne"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                <p>
+                                    <a href="#!" class="text-reset">Nike App</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Nike Run Club App</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Nike Training Club App</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">SNKRS</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3" id="accordion3">
+                        
+                        <div class="header p-4" id="heading3">
+                            <h5 class="mb-0">
+                                <button class="btn text-white" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                    ACERCA DE NIKE
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapse3" class="collapse bg-dark p-3" aria-labelledby="headingOne"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                <p>
+                                    <a href="#!" class="text-reset">Novedades</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Traabaja con nosotros</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Inversores</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Sostenibilidad</a>
+                                </p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <!------------- Redes --------------->
+                    <div class="col-md-3">
+                        <div class="card-body">
+                            <div class="row p-5">
+                                <div class="col">
+                                    <p>
+                                        <a href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                                class="bi bi-instagram" viewbox="0 0 16 16">
+                                                <path
+                                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                            </svg>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col">
+                                    <p>
+                                        <a href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                                class="bi bi-facebook" viewbox="0 0 16 16">
+                                                <path
+                                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                            </svg>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col">
+                                    <p>
+                                        <a href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                                class="bi bi-twitter" viewbox="0 0 16 16">
+                                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0
+                                                 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 
+                                                 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                            </svg>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+                © 2022 Copyright:
+                <a class="text-reset fw-bold" href="https://nike.com">Nike.com</a>
             </div>
 
-        </section>
+        </footer>
 
-
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-            © 2021 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
         </script>
-</body>
+    </body>
 
 </html>
